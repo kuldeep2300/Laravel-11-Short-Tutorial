@@ -7,8 +7,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('home/profile/user', 'home')->name('home');
-Route::view('home/profile/{name}', 'home')->name('user');
+Route::prefix('student')->group(function () {
+    Route::view('/home', 'home');
+    Route::get('/show', [HomeController::class, 'show']);
+    Route::get('/add', [HomeController::class, 'add']);
+});
 
-Route::get('show', [HomeController::class, 'show']);
-Route::get('user', [HomeController::class, 'user']);
+Route::prefix('student/india')->group(function() {
+    Route::view('/home', 'home');
+    Route::get('/show', [HomeController::class, 'show']);
+    Route::get('/add', [HomeController::class, 'add']);
+});

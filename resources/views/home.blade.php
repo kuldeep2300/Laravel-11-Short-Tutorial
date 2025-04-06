@@ -1,5 +1,4 @@
 <div>
     <h1>Home Page</h1>
-    <h3>This is also Anil Profile</h3>
-    <!-- The biggest battle is the war against ignorance. - Mustafa Kemal Atatürk -->
+    <!-- I begin to speak only when I am certain what I will say is not better left unsaid. - Cato the Younger -->
 </div>
